@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite verbose="5" name="Failed suite [Main Test Suite]">
+  <parameter name="appURL" value="http://www.lampsplus.com/"/>
+  <parameter name="browserType" value="chrome"/>
+  <listeners>
+    <listener class-name="TestReport.TestNGCustomReportListener2"/>
+  </listeners>
+  <test name="Lamp Plus - Navigation Bar(failed)">
+    <classes>
+      <class name="com.howtotestngdo.test.FirstTest">
+        <methods>
+          <include name="initializeTestBaseSetup"/>
+          <include name="initializeTestBaseSetup"/>
+          <include name="testNavMenu"/>
+          <include name="afterTest"/>
+          <include name="afterTest"/>
+          <include name="beforeTest"/>
+          <include name="beforeTest"/>
+        </methods>
+      </class> <!-- com.howtotestngdo.test.FirstTest -->
+    </classes>
+  </test> <!-- Lamp Plus - Navigation Bar(failed) -->
+</suite> <!-- Failed suite [Main Test Suite] -->

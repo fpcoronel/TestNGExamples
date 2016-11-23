@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" total="12" passed="12">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Main Test Suite" duration-ms="62397" started-at="2016-11-23T14:39:16Z" finished-at="2016-11-23T14:40:19Z">
+    <groups>
+    </groups>
+    <test name="Lamp Plus - Navigation Bar" duration-ms="43561" started-at="2016-11-23T14:39:16Z" finished-at="2016-11-23T14:40:00Z">
+      <class name="com.howtotestngdo.test.FirstTest">
+        <test-method status="PASS" signature="beforeTest()[pri:0, instance:com.howtotestngdo.test.FirstTest@22a71081]" name="beforeTest" is-config="true" duration-ms="11" started-at="2016-11-23T11:39:16Z" finished-at="2016-11-23T11:39:16Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeTest -->
+        <test-method status="PASS" signature="initializeTestBaseSetup(java.lang.String, java.lang.String)[pri:0, instance:com.howtotestngdo.test.FirstTest@22a71081]" name="initializeTestBaseSetup" is-config="true" duration-ms="17174" started-at="2016-11-23T11:39:16Z" finished-at="2016-11-23T11:39:34Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[http://www.lampsplus.com/]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initializeTestBaseSetup -->
+        <test-method status="PASS" signature="launchSite()[pri:0, instance:com.howtotestngdo.test.FirstTest@22a71081]" name="launchSite" duration-ms="12" started-at="2016-11-23T11:39:34Z" description="Lamps Plus site - Main page - Title" finished-at="2016-11-23T11:39:34Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchSite -->
+        <test-method status="PASS" signature="testChandeliersList(java.lang.String)[pri:0, instance:com.howtotestngdo.test.FirstTest@22a71081]" name="testChandeliersList" duration-ms="2985" started-at="2016-11-23T11:39:34Z" description="Lamps Plus site - Chandeliers - By Categories" finished-at="2016-11-23T11:39:37Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[http://www.lampsplus.com/]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testChandeliersList -->
+        <test-method status="PASS" signature="testNavMenu()[pri:0, instance:com.howtotestngdo.test.FirstTest@22a71081]" name="testNavMenu" duration-ms="423" started-at="2016-11-23T11:39:37Z" description="Lamps Plus site - Main Navigation menu" finished-at="2016-11-23T11:39:37Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testNavMenu -->
+        <test-method status="PASS" signature="testNavigationCeilingLights()[pri:0, instance:com.howtotestngdo.test.FirstTest@22a71081]" name="testNavigationCeilingLights" duration-ms="3351" started-at="2016-11-23T11:39:37Z" description="Lamps Plus site - Navigation - Ceiling Lights" finished-at="2016-11-23T11:39:40Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testNavigationCeilingLights -->
+        <test-method status="PASS" signature="testNavigationChandeliers()[pri:0, instance:com.howtotestngdo.test.FirstTest@22a71081]" name="testNavigationChandeliers" duration-ms="2449" started-at="2016-11-23T11:39:40Z" description="Lamps Plus site - Navigation - Chandeliers" finished-at="2016-11-23T11:39:43Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testNavigationChandeliers -->
+        <test-method status="PASS" signature="testNavigationFans()[pri:0, instance:com.howtotestngdo.test.FirstTest@22a71081]" name="testNavigationFans" duration-ms="2822" started-at="2016-11-23T11:39:43Z" description="Lamps Plus site - Navigation - Fans" finished-at="2016-11-23T11:39:46Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testNavigationFans -->
+        <test-method status="PASS" signature="testNavigationFurniture()[pri:0, instance:com.howtotestngdo.test.FirstTest@22a71081]" name="testNavigationFurniture" duration-ms="2107" started-at="2016-11-23T11:39:46Z" description="Lamps Plus site - Navigation - Furniture" finished-at="2016-11-23T11:39:48Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testNavigationFurniture -->
+        <test-method status="PASS" signature="testNavigationHomeDecor()[pri:0, instance:com.howtotestngdo.test.FirstTest@22a71081]" name="testNavigationHomeDecor" duration-ms="2506" started-at="2016-11-23T11:39:48Z" description="Lamps Plus site - Navigation - Home Decor" finished-at="2016-11-23T11:39:50Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testNavigationHomeDecor -->
+        <test-method status="PASS" signature="testNavigationLamps()[pri:0, instance:com.howtotestngdo.test.FirstTest@22a71081]" name="testNavigationLamps" duration-ms="2591" started-at="2016-11-23T11:39:50Z" description="Lamps Plus site - Navigation - Lamps" finished-at="2016-11-23T11:39:53Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testNavigationLamps -->
+        <test-method status="PASS" signature="testNavigationOutdoor()[pri:0, instance:com.howtotestngdo.test.FirstTest@22a71081]" name="testNavigationOutdoor" duration-ms="3112" started-at="2016-11-23T11:39:53Z" description="Lamps Plus site - Navigation - Outdoor" finished-at="2016-11-23T11:39:56Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testNavigationOutdoor -->
+        <test-method status="PASS" signature="testNavigationWallLights()[pri:0, instance:com.howtotestngdo.test.FirstTest@22a71081]" name="testNavigationWallLights" duration-ms="2830" started-at="2016-11-23T11:39:56Z" description="Lamps Plus site - Navigation - Wall Lights" finished-at="2016-11-23T11:39:59Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testNavigationWallLights -->
+        <test-method status="PASS" signature="afterTest()[pri:0, instance:com.howtotestngdo.test.FirstTest@22a71081]" name="afterTest" is-config="true" duration-ms="1166" started-at="2016-11-23T11:39:59Z" finished-at="2016-11-23T11:40:00Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterTest -->
+      </class> <!-- com.howtotestngdo.test.FirstTest -->
+    </test> <!-- Lamp Plus - Navigation Bar -->
+    <test name="Navigation - Chandeliers" duration-ms="18787" started-at="2016-11-23T14:40:00Z" finished-at="2016-11-23T14:40:19Z">
+      <class name="com.howtotestngdo.test.FirstTest">
+        <test-method status="PASS" signature="beforeTest()[pri:0, instance:com.howtotestngdo.test.FirstTest@34033bd0]" name="beforeTest" is-config="true" duration-ms="1" started-at="2016-11-23T11:40:00Z" finished-at="2016-11-23T11:40:00Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeTest -->
+        <test-method status="PASS" signature="initializeTestBaseSetup(java.lang.String, java.lang.String)[pri:0, instance:com.howtotestngdo.test.FirstTest@34033bd0]" name="initializeTestBaseSetup" is-config="true" duration-ms="14595" started-at="2016-11-23T11:40:00Z" finished-at="2016-11-23T11:40:15Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[http://www.lampsplus.com/]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initializeTestBaseSetup -->
+        <test-method status="PASS" signature="testChandeliersList(java.lang.String)[pri:0, instance:com.howtotestngdo.test.FirstTest@34033bd0]" name="testChandeliersList" duration-ms="3312" started-at="2016-11-23T11:40:15Z" description="Lamps Plus site - Chandeliers - By Categories" finished-at="2016-11-23T11:40:18Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[http://www.lampsplus.com/]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testChandeliersList -->
+        <test-method status="PASS" signature="afterTest()[pri:0, instance:com.howtotestngdo.test.FirstTest@34033bd0]" name="afterTest" is-config="true" duration-ms="879" started-at="2016-11-23T11:40:18Z" finished-at="2016-11-23T11:40:19Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterTest -->
+      </class> <!-- com.howtotestngdo.test.FirstTest -->
+    </test> <!-- Navigation - Chandeliers -->
+  </suite> <!-- Main Test Suite -->
+</testng-results>

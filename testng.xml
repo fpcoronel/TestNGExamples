@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="Main Test Suite" verbose="5">
+
+	<parameter name="appURL" value="http://www.lampsplus.com/" />
+	<parameter name="browserType" value="chrome" />
+
+	<listeners>
+		<listener class-name="TestReport.TestNGCustomReportListener2" />
+	</listeners>
+	<test name="Lamp Plus - Navigation Bar">
+		<packages>
+			<package name="com.howtotestngdo.test" />
+		</packages>
+	</test>
+	<test name="Navigation - Chandeliers">
+		<classes>
+			<class name="com.howtotestngdo.test.FirstTest">
+				<methods>
+					<include name="testChandeliersList" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+</suite>
