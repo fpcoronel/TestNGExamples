@@ -5,6 +5,7 @@ import org.testng.annotations.Test;
 import org.testng.asserts.SoftAssert;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Parameters;
+import org.testng.Assert;
 import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeClass;
 
@@ -13,33 +14,40 @@ import java.lang.System;
 import org.openqa.selenium.*;
 import org.openqa.selenium.chrome.*;
 
-public class FirstTest {
+import PageObjects.HomePage;
+import driverSetUp.DriverSetUp;
+
+public class FirstTest extends DriverSetUp {
 
 	SoftAssert s_assert = new SoftAssert();
-	WebDriver driver;
-	
+	private WebDriver driver;
+	private HomePage homepage;
 
 	@Parameters({ "browserType", "appURL" })
-
 	@BeforeClass
-	public void initializeTestBaseSetup(String browserType, String appURL) {
+	
+	public void setUp() {
+		driver = getDriver();
+	}
+	
+	/*public void initializeTestBaseSetup(String browserType, String appURL) {
 		try {
 			setDriver(browserType, appURL);
 
 		} catch (Exception e) {
 			System.out.println("Error....." + e.getStackTrace());
 		}
-	}
+	}*/
 
-	private void setDriver(String browserType, String appURL) {
+	/*private void setDriver(String browserType, String appURL) {
 		switch (browserType) {
 		case "chrome":
 			driver = initChromeDriver(appURL);
-			break;
+			break;*/
 		/*
 		 * case "firefox": driver = initFirefoxDriver(appURL); break;
 		 */
-		default:
+		/*default:
 			System.out.println("browser : " + browserType + " is invalid");// ,
 																			// Launching
 																			// Firefox
@@ -49,16 +57,16 @@ public class FirstTest {
 																			// choice..");
 			// driver = initFirefoxDriver(appURL);
 		}
-	}
+	}*/
 
-	private static WebDriver initChromeDriver(String appURL) {
+	/*private static WebDriver initChromeDriver(String appURL) {
 		System.out.println("Launching google chrome with new profile..");
 		System.setProperty("webdriver.chrome.driver", "C:/Selenium/chromedriver.exe");
 		WebDriver driver = new ChromeDriver();
 		driver.manage().window().maximize();
 		driver.navigate().to(appURL);
 		return driver;
-	}
+	}*/
 
 	/*
 	 * private static WebDriver initFirefoxDriver(String appURL) {
@@ -66,7 +74,8 @@ public class FirstTest {
 	 * FirefoxDriver(); driver.manage().window().maximize();
 	 * driver.navigate().to(appURL); return driver; }
 	 */
-
+	
+	
 	@Test(description = "Lamps Plus site - Main page - Title")
 	public void launchSite() {
 		/*
@@ -75,9 +84,12 @@ public class FirstTest {
 		 * driver.manage().window().maximize(); driver.get(URL);
 		 */
 
-		String Title = driver.getTitle();
-		assertEquals("Home Lighting - Fixtures, Lamps & More Online | Lamps Plus", Title);
+		//String Title = driver.getTitle();
+		//assertEquals("Home Lighting - Fixtures, Lamps & More Online | Lamps Plus", Title);
+		homepage = new HomePage(driver);
+		Assert.assertTrue(homepage.verifyHomePageTitle(), "Sign In page title doesn't match");
 	}
+
 
 	@Test(description = "Lamps Plus site - Main Navigation menu")
 	public void testNavMenu() {
@@ -180,7 +192,7 @@ public class FirstTest {
 		String Title = driver.getTitle();
 		assertEquals("Home Decor - Designer Home Accessories | Lamps Plus", Title);
 	}
-
+	
 	@Parameters({ "appURL" })
 	@Test(description = "Lamps Plus site - Chandeliers - By Categories")
 	public void testChandeliersList(String paramURL) {
