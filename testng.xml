@@ -13,7 +13,7 @@
 			<package name="com.howtotestngdo.test" />
 		</packages>
 	</test>
-	<test name="Navigation - Chandeliers">
+	<!-- <test name="Navigation - Chandeliers">
 		<classes>
 			<class name="com.howtotestngdo.test.FirstTest">
 				<methods>
@@ -21,5 +21,5 @@
 				</methods>
 			</class>
 		</classes>
-	</test>
+	</test> -->
 </suite>

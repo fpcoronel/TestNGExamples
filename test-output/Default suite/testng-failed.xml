@@ -1,14 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
+  <parameter name="appURL" value="http://www.lampsplus.com/"/>
+  <parameter name="browserType" value="chrome"/>
   <test name="Default test(failed)">
     <classes>
       <class name="com.howtotestngdo.test.FirstTest">
         <methods>
+          <include name="initializeDriverSetup"/>
+          <include name="testNavMenu"/>
           <include name="afterTest"/>
           <include name="beforeTest"/>
           <include name="setUp"/>
-          <include name="testChandeliersList"/>
+          <include name="tearDown"/>
         </methods>
       </class> <!-- com.howtotestngdo.test.FirstTest -->
     </classes>

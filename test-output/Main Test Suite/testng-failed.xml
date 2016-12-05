@@ -10,13 +10,12 @@
     <classes>
       <class name="com.howtotestngdo.test.FirstTest">
         <methods>
-          <include name="initializeTestBaseSetup"/>
-          <include name="initializeTestBaseSetup"/>
+          <include name="initializeDriverSetup"/>
           <include name="testNavMenu"/>
           <include name="afterTest"/>
-          <include name="afterTest"/>
           <include name="beforeTest"/>
-          <include name="beforeTest"/>
+          <include name="setUp"/>
+          <include name="tearDown"/>
         </methods>
       </class> <!-- com.howtotestngdo.test.FirstTest -->
     </classes>
