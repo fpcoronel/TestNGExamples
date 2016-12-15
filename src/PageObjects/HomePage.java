@@ -2,6 +2,9 @@ package PageObjects;
 
 import org.openqa.selenium.*;
 
+import org.openqa.selenium.support.PageFactory;
+
+
 
 public class HomePage {
 	

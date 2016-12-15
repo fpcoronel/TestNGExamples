@@ -33,14 +33,8 @@ public class FirstTest extends DriverSetUp {
 	
 	@Test(description = "Lamps Plus site - Main page - Title")
 	public void launchSite() {
-		/*
-		 * invocando en cada test un nuevo driver cuatriplica o mas el tiempo de
-		 * ejecución WebDriver driver = new ChromeDriver ();
-		 * driver.manage().window().maximize(); driver.get(URL);
-		 */
 
-		//String Title = driver.getTitle();
-		//assertEquals("Home Lighting - Fixtures, Lamps & More Online | Lamps Plus", Title);
+
 		homepage = new HomePage(driver);
 		Assert.assertTrue(homepage.verifyHomePageTitle(), "Sign In page title doesn't match");
 	}
