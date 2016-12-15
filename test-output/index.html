@@ -24,7 +24,7 @@
     <div class="top-banner-root">
       <span class="top-banner-title-font">Test results</span>
       <br/>
-      <span class="top-banner-font-1">1 suite, 1 failed test</span>
+      <span class="top-banner-font-1">1 suite</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -38,7 +38,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" class="navigator-link" panel-name="suite-Default_suite">
-              <span class="suite-name border-failed">Default suite</span>
+              <span class="suite-name border-passed">Default suite</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -49,7 +49,7 @@
               <ul>
                 <li>
                   <a href="#" class="navigator-link " panel-name="test-xml-Default_suite">
-                    <span>C:\Users\fcoronel\AppData\Local\Temp\testng-eclipse-240340337\testng-customsuite.xml</span>
+                    <span>C:\Users\fcoronel\AppData\Local\Temp\testng-eclipse--1520616531\testng-customsuite.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -91,21 +91,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">11 methods, 1 failed,   10 passed</span>
-                  </li>
-                  <li>
-                    <span class="method-list-title failed">Failed methods</span>
-                    <span class="show-or-hide-methods failed">
-                      <a href="#" panel-name="suite-Default_suite" class="hide-methods failed suite-Default_suite"> (hide)</a> <!-- hide-methods failed suite-Default_suite -->
-                      <a href="#" panel-name="suite-Default_suite" class="show-methods failed suite-Default_suite"> (show)</a> <!-- show-methods failed suite-Default_suite -->
-                    </span>
-                    <div class="method-list-content failed suite-Default_suite">
-                      <span>
-                        <img width="3%" src="failed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="com.howtotestngdo.test.FirstTest" hash-for-method="testNavMenu">testNavMenu</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                    </div> <!-- method-list-content failed suite-Default_suite -->
+                    <span class="method-stats">11 methods,   11 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -122,6 +108,11 @@
                       <span>
                         <img width="3%" src="passed.png"/>
                         <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="com.howtotestngdo.test.FirstTest" hash-for-method="testChandeliersList(http://www.lampsplus.com/)">testChandeliersList(http://www.lampsplus.com/)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="com.howtotestngdo.test.FirstTest" hash-for-method="testNavMenu">testNavMenu</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
@@ -176,54 +167,6 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-Default_suite" class="panel Default_suite">
-          <div class="suite-Default_suite-class-failed">
-            <div class="main-panel-header rounded-window-top">
-              <img src="failed.png"/>
-              <span class="class-name">com.howtotestngdo.test.FirstTest</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="testNavMenu">
-                  </a> <!-- testNavMenu -->
-                  <span class="method-name">testNavMenu</span>
-                  <div class="stack-trace">java.lang.AssertionError: The following asserts failed:
-	expected [Chandeliers] but found [Chandelier]
-	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:43)
-	at com.howtotestngdo.test.FirstTest.testNavMenu(FirstTest.java:122)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-	at java.lang.reflect.Method.invoke(Unknown Source)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:100)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:646)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:811)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1137)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
-	at org.testng.TestRunner.privateRun(TestRunner.java:753)
-	at org.testng.TestRunner.run(TestRunner.java:607)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:368)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:363)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:321)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:270)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1284)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1209)
-	at org.testng.TestNG.runSuites(TestNG.java:1124)
-	at org.testng.TestNG.run(TestNG.java:1096)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:132)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:236)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:81)
-
-</div> <!-- stack-trace -->
-                  <em>
-(Lamps Plus site - Main Navigation menu)                  </em>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Default_suite-class-failed -->
           <div class="suite-Default_suite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
@@ -247,6 +190,15 @@
                   <span class="parameters">(http://www.lampsplus.com/)</span>
                   <em>
 (Lamps Plus site - Chandeliers - By Categories)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testNavMenu">
+                  </a> <!-- testNavMenu -->
+                  <span class="method-name">testNavMenu</span>
+                  <em>
+(Lamps Plus site - Main Navigation menu)                  </em>
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
@@ -326,7 +278,7 @@
         </div> <!-- panel Default_suite -->
         <div panel-name="test-xml-Default_suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">C:\Users\fcoronel\AppData\Local\Temp\testng-eclipse-240340337\testng-customsuite.xml</span>
+            <span class="header-content">C:\Users\fcoronel\AppData\Local\Temp\testng-eclipse--1520616531\testng-customsuite.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
@@ -379,54 +331,54 @@ data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
 data.addRows(11);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'launchSite')
+data.setCell(0, 1, 'testChandeliersList')
 data.setCell(0, 2, 'com.howtotestngdo.test.FirstTest')
-data.setCell(0, 3, 129297);
+data.setCell(0, 3, 3809);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'testNavigationLamps')
+data.setCell(1, 1, 'testNavigationCeilingLights')
 data.setCell(1, 2, 'com.howtotestngdo.test.FirstTest')
-data.setCell(1, 3, 64006);
+data.setCell(1, 3, 3496);
 data.setCell(2, 0, 2)
-data.setCell(2, 1, 'testChandeliersList')
+data.setCell(2, 1, 'testNavigationFans')
 data.setCell(2, 2, 'com.howtotestngdo.test.FirstTest')
-data.setCell(2, 3, 36334);
+data.setCell(2, 3, 3495);
 data.setCell(3, 0, 3)
-data.setCell(3, 1, 'testNavigationCeilingLights')
+data.setCell(3, 1, 'testNavigationOutdoor')
 data.setCell(3, 2, 'com.howtotestngdo.test.FirstTest')
-data.setCell(3, 3, 28518);
+data.setCell(3, 3, 3290);
 data.setCell(4, 0, 4)
-data.setCell(4, 1, 'testNavigationHomeDecor')
+data.setCell(4, 1, 'testNavigationFurniture')
 data.setCell(4, 2, 'com.howtotestngdo.test.FirstTest')
-data.setCell(4, 3, 11676);
+data.setCell(4, 3, 2867);
 data.setCell(5, 0, 5)
-data.setCell(5, 1, 'testNavigationFans')
+data.setCell(5, 1, 'testNavigationLamps')
 data.setCell(5, 2, 'com.howtotestngdo.test.FirstTest')
-data.setCell(5, 3, 8016);
+data.setCell(5, 3, 2850);
 data.setCell(6, 0, 6)
-data.setCell(6, 1, 'testNavigationWallLights')
+data.setCell(6, 1, 'testNavigationHomeDecor')
 data.setCell(6, 2, 'com.howtotestngdo.test.FirstTest')
-data.setCell(6, 3, 6072);
+data.setCell(6, 3, 2729);
 data.setCell(7, 0, 7)
-data.setCell(7, 1, 'testNavigationOutdoor')
+data.setCell(7, 1, 'testNavigationChandeliers')
 data.setCell(7, 2, 'com.howtotestngdo.test.FirstTest')
-data.setCell(7, 3, 5839);
+data.setCell(7, 3, 2641);
 data.setCell(8, 0, 8)
-data.setCell(8, 1, 'testNavigationChandeliers')
+data.setCell(8, 1, 'testNavigationWallLights')
 data.setCell(8, 2, 'com.howtotestngdo.test.FirstTest')
-data.setCell(8, 3, 4472);
+data.setCell(8, 3, 2614);
 data.setCell(9, 0, 9)
-data.setCell(9, 1, 'testNavigationFurniture')
+data.setCell(9, 1, 'testNavMenu')
 data.setCell(9, 2, 'com.howtotestngdo.test.FirstTest')
-data.setCell(9, 3, 4110);
+data.setCell(9, 3, 540);
 data.setCell(10, 0, 10)
-data.setCell(10, 1, 'testNavMenu')
+data.setCell(10, 1, 'launchSite')
 data.setCell(10, 2, 'com.howtotestngdo.test.FirstTest')
-data.setCell(10, 3, 1440);
+data.setCell(10, 3, 104);
 window.suiteTableData['Default_suite']= { tableData: data, tableDiv: 'times-div-Default_suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 4 minutes</span>
+              <span class="suite-total-time">Total running time: 28 seconds</span>
               <div id="times-div-Default_suite">
               </div> <!-- times-div-Default_suite -->
             </div> <!-- times-div -->
@@ -459,65 +411,63 @@ return data;
               </div> <!-- configuration-test before -->
               <div class="configuration-class before">
                 <span class="method-name">initializeDriverSetup(chrome, http://www.lampsplus.com/)</span>
-                <span class="method-start">24 ms</span>
+                <span class="method-start">16 ms</span>
               </div> <!-- configuration-class before -->
               <div class="configuration-class before">
                 <span class="method-name">setUp</span>
-                <span class="method-start">18023 ms</span>
+                <span class="method-start">21972 ms</span>
               </div> <!-- configuration-class before -->
               <div class="test-method">
                 <span class="method-name">launchSite</span>
-                <span class="method-start">65096 ms</span>
+                <span class="method-start">21985 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">testChandeliersList(http://www.lampsplus.com/)</span>
-                <span class="method-start">194487 ms</span>
+                <span class="method-start">22094 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
-                <img src="failed.png">
-                </img>
                 <span class="method-name">testNavMenu</span>
-                <span class="method-start">230898 ms</span>
+                <span class="method-start">25906 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">testNavigationCeilingLights</span>
-                <span class="method-start">232486 ms</span>
+                <span class="method-start">26450 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">testNavigationChandeliers</span>
-                <span class="method-start">261076 ms</span>
+                <span class="method-start">29948 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">testNavigationFans</span>
-                <span class="method-start">265640 ms</span>
+                <span class="method-start">32592 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">testNavigationFurniture</span>
-                <span class="method-start">273729 ms</span>
+                <span class="method-start">36090 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">testNavigationHomeDecor</span>
-                <span class="method-start">277910 ms</span>
+                <span class="method-start">38961 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">testNavigationLamps</span>
-                <span class="method-start">289668 ms</span>
+                <span class="method-start">41692 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">testNavigationOutdoor</span>
-                <span class="method-start">353747 ms</span>
+                <span class="method-start">44545 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">testNavigationWallLights</span>
-                <span class="method-start">359659 ms</span>
+                <span class="method-start">47837 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-class after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">365778 ms</span>
+                <span class="method-start">50457 ms</span>
               </div> <!-- configuration-class after -->
               <div class="configuration-test after">
                 <span class="method-name">afterTest</span>
-                <span class="method-start">368845 ms</span>
+                <span class="method-start">51863 ms</span>
               </div> <!-- configuration-test after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
