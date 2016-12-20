@@ -13,6 +13,8 @@ import java.lang.System;
 
 import org.openqa.selenium.*;
 import org.openqa.selenium.chrome.*;
+import org.openqa.selenium.support.PageFactory;
+
 
 import PageObjects.HomePage;
 import driverSetUp.DriverSetUp;
@@ -21,7 +23,7 @@ public class FirstTest extends DriverSetUp {
 
 	SoftAssert s_assert = new SoftAssert();
 	private WebDriver driver;
-	private HomePage homepage;
+	//private HomePage homepage;
 
 	@Parameters({ "browserType", "appURL" })
 	@BeforeClass
@@ -34,19 +36,45 @@ public class FirstTest extends DriverSetUp {
 	@Test(description = "Lamps Plus site - Main page - Title")
 	public void launchSite() {
 
-
-		homepage = new HomePage(driver);
-		Assert.assertTrue(homepage.verifyHomePageTitle(), "Sign In page title doesn't match");
+		//homepage = new HomePage(driver);
+		HomePage homePage = PageFactory.initElements(driver, HomePage.class);
+		Assert.assertTrue(homePage.verifyHomePageTitle(), "Sign In page title doesn't match");
 	}
 
 
 	@Test(description = "Lamps Plus site - Main Navigation menu")
 	public void testNavMenu() {
+		
+		String MenuOption = null;
+		String [] MenuOptions = {"Chandeliers","Ceiling Lights","Lamps","Wall Lights"};
+		
+		HomePage homePage = PageFactory.initElements(driver, HomePage.class);
+		
+		for (int i = 0; i < MenuOptions.length; i++) {
+			MenuOption = MenuOptions[i];
+			s_assert.assertTrue(homePage.verifyOptionText(MenuOption), "Option Not Found");
+		}
+		s_assert.assertAll();
+		
+		/*MenuOption = "Chandeliers";
+		s_assert.assertTrue(homePage.verifyOptionText(MenuOption), "Option Not Found");
+		
+		MenuOption = "Ceiling Lights";
+		s_assert.assertTrue(homePage.verifyOptionText(MenuOption), "Option Not Found");
+		
+		MenuOption = "Lamps";
+		s_assert.assertTrue(homePage.verifyOptionText(MenuOption), "Option Not Found");
+				
+		MenuOption = "Wall Lights";
+		s_assert.assertTrue(homePage.verifyOptionText(MenuOption), "Option Not Found");
+		
+		s_assert.assertAll();*/
+		
+	}
+		//WebElement optionchandeliers = driver.findElement(By.id("chandeliers"));
+		//s_assert.assertEquals("Chandeliers", optionchandeliers.getText());
 
-		WebElement optionchandeliers = driver.findElement(By.id("chandeliers"));
-		s_assert.assertEquals("Chandeliers", optionchandeliers.getText());
-
-		WebElement optionceilingLighting = driver.findElement(By.id("ceilingLighting"));
+		/*WebElement optionceilingLighting = driver.findElement(By.id("ceilingLighting"));
 		assertEquals("Ceiling Lights", optionceilingLighting.getText());
 
 		WebElement optionlamps = driver.findElement(By.id("lamps"));
@@ -150,7 +178,7 @@ public class FirstTest extends DriverSetUp {
 		WebElement ChandeliersOpt1 = driver.findElement(By.xpath("//*[@id=\"lpContainer\"]/div/aside/div[1]/b"));
 		String ChOpt = ChandeliersOpt1.getText();
 		assertEquals("By Style", ChOpt);
-	}
+	}*/
 
 	@BeforeTest
 	public void beforeTest() {

@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" total="11" passed="11">
+<testng-results skipped="0" failed="0" total="2" passed="2">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="51875" started-at="2016-12-15T19:24:21Z" finished-at="2016-12-15T19:25:13Z">
+  <suite name="Default suite" duration-ms="18310" started-at="2016-12-19T21:58:17Z" finished-at="2016-12-19T21:58:35Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="51875" started-at="2016-12-15T19:24:21Z" finished-at="2016-12-15T19:25:13Z">
+    <test name="Default test" duration-ms="18310" started-at="2016-12-19T21:58:17Z" finished-at="2016-12-19T21:58:35Z">
       <class name="com.howtotestngdo.test.FirstTest">
-        <test-method status="PASS" signature="beforeTest()[pri:0, instance:com.howtotestngdo.test.FirstTest@57baeedf]" name="beforeTest" is-config="true" duration-ms="11" started-at="2016-12-15T16:24:21Z" finished-at="2016-12-15T16:24:21Z">
+        <test-method status="PASS" signature="beforeTest()[pri:0, instance:com.howtotestngdo.test.FirstTest@42e26948]" name="beforeTest" is-config="true" duration-ms="10" started-at="2016-12-19T18:58:17Z" finished-at="2016-12-19T18:58:17Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeTest -->
-        <test-method status="PASS" signature="initializeDriverSetup(java.lang.String, java.lang.String)[pri:0, instance:com.howtotestngdo.test.FirstTest@57baeedf]" name="initializeDriverSetup" is-config="true" duration-ms="21956" started-at="2016-12-15T16:24:21Z" finished-at="2016-12-15T16:24:43Z">
+        <test-method status="PASS" signature="initializeDriverSetup(java.lang.String, java.lang.String)[pri:0, instance:com.howtotestngdo.test.FirstTest@42e26948]" name="initializeDriverSetup" is-config="true" duration-ms="16736" started-at="2016-12-19T18:58:17Z" finished-at="2016-12-19T18:58:34Z">
           <params>
             <param index="0">
               <value>
@@ -27,66 +27,23 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- initializeDriverSetup -->
-        <test-method status="PASS" signature="setUp()[pri:0, instance:com.howtotestngdo.test.FirstTest@57baeedf]" name="setUp" is-config="true" duration-ms="1" started-at="2016-12-15T16:24:43Z" finished-at="2016-12-15T16:24:43Z">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.howtotestngdo.test.FirstTest@42e26948]" name="setUp" is-config="true" duration-ms="1" started-at="2016-12-19T18:58:34Z" finished-at="2016-12-19T18:58:34Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="launchSite()[pri:0, instance:com.howtotestngdo.test.FirstTest@57baeedf]" name="launchSite" duration-ms="104" started-at="2016-12-15T16:24:43Z" description="Lamps Plus site - Main page - Title" finished-at="2016-12-15T16:24:43Z">
+        <test-method status="PASS" signature="launchSite()[pri:0, instance:com.howtotestngdo.test.FirstTest@42e26948]" name="launchSite" duration-ms="63" started-at="2016-12-19T18:58:34Z" description="Lamps Plus site - Main page - Title" finished-at="2016-12-19T18:58:34Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- launchSite -->
-        <test-method status="PASS" signature="testChandeliersList(java.lang.String)[pri:0, instance:com.howtotestngdo.test.FirstTest@57baeedf]" name="testChandeliersList" duration-ms="3809" started-at="2016-12-15T16:24:43Z" description="Lamps Plus site - Chandeliers - By Categories" finished-at="2016-12-15T16:24:47Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[http://www.lampsplus.com/]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testChandeliersList -->
-        <test-method status="PASS" signature="testNavMenu()[pri:0, instance:com.howtotestngdo.test.FirstTest@57baeedf]" name="testNavMenu" duration-ms="540" started-at="2016-12-15T16:24:47Z" description="Lamps Plus site - Main Navigation menu" finished-at="2016-12-15T16:24:48Z">
+        <test-method status="PASS" signature="testNavMenu()[pri:0, instance:com.howtotestngdo.test.FirstTest@42e26948]" name="testNavMenu" duration-ms="207" started-at="2016-12-19T18:58:34Z" description="Lamps Plus site - Main Navigation menu" finished-at="2016-12-19T18:58:34Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testNavMenu -->
-        <test-method status="PASS" signature="testNavigationCeilingLights()[pri:0, instance:com.howtotestngdo.test.FirstTest@57baeedf]" name="testNavigationCeilingLights" duration-ms="3496" started-at="2016-12-15T16:24:48Z" description="Lamps Plus site - Navigation - Ceiling Lights" finished-at="2016-12-15T16:24:51Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testNavigationCeilingLights -->
-        <test-method status="PASS" signature="testNavigationChandeliers()[pri:0, instance:com.howtotestngdo.test.FirstTest@57baeedf]" name="testNavigationChandeliers" duration-ms="2641" started-at="2016-12-15T16:24:51Z" description="Lamps Plus site - Navigation - Chandeliers" finished-at="2016-12-15T16:24:54Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testNavigationChandeliers -->
-        <test-method status="PASS" signature="testNavigationFans()[pri:0, instance:com.howtotestngdo.test.FirstTest@57baeedf]" name="testNavigationFans" duration-ms="3495" started-at="2016-12-15T16:24:54Z" description="Lamps Plus site - Navigation - Fans" finished-at="2016-12-15T16:24:57Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testNavigationFans -->
-        <test-method status="PASS" signature="testNavigationFurniture()[pri:0, instance:com.howtotestngdo.test.FirstTest@57baeedf]" name="testNavigationFurniture" duration-ms="2867" started-at="2016-12-15T16:24:57Z" description="Lamps Plus site - Navigation - Furniture" finished-at="2016-12-15T16:25:00Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testNavigationFurniture -->
-        <test-method status="PASS" signature="testNavigationHomeDecor()[pri:0, instance:com.howtotestngdo.test.FirstTest@57baeedf]" name="testNavigationHomeDecor" duration-ms="2729" started-at="2016-12-15T16:25:00Z" description="Lamps Plus site - Navigation - Home Decor" finished-at="2016-12-15T16:25:03Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testNavigationHomeDecor -->
-        <test-method status="PASS" signature="testNavigationLamps()[pri:0, instance:com.howtotestngdo.test.FirstTest@57baeedf]" name="testNavigationLamps" duration-ms="2850" started-at="2016-12-15T16:25:03Z" description="Lamps Plus site - Navigation - Lamps" finished-at="2016-12-15T16:25:06Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testNavigationLamps -->
-        <test-method status="PASS" signature="testNavigationOutdoor()[pri:0, instance:com.howtotestngdo.test.FirstTest@57baeedf]" name="testNavigationOutdoor" duration-ms="3290" started-at="2016-12-15T16:25:06Z" description="Lamps Plus site - Navigation - Outdoor" finished-at="2016-12-15T16:25:09Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testNavigationOutdoor -->
-        <test-method status="PASS" signature="testNavigationWallLights()[pri:0, instance:com.howtotestngdo.test.FirstTest@57baeedf]" name="testNavigationWallLights" duration-ms="2614" started-at="2016-12-15T16:25:09Z" description="Lamps Plus site - Navigation - Wall Lights" finished-at="2016-12-15T16:25:12Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testNavigationWallLights -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.howtotestngdo.test.FirstTest@57baeedf]" name="tearDown" is-config="true" duration-ms="1405" started-at="2016-12-15T16:25:12Z" finished-at="2016-12-15T16:25:13Z">
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.howtotestngdo.test.FirstTest@42e26948]" name="tearDown" is-config="true" duration-ms="1255" started-at="2016-12-19T18:58:34Z" finished-at="2016-12-19T18:58:35Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method status="PASS" signature="afterTest()[pri:0, instance:com.howtotestngdo.test.FirstTest@57baeedf]" name="afterTest" is-config="true" duration-ms="0" started-at="2016-12-15T16:25:13Z" finished-at="2016-12-15T16:25:13Z">
+        <test-method status="PASS" signature="afterTest()[pri:0, instance:com.howtotestngdo.test.FirstTest@42e26948]" name="afterTest" is-config="true" duration-ms="0" started-at="2016-12-19T18:58:35Z" finished-at="2016-12-19T18:58:35Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterTest -->
