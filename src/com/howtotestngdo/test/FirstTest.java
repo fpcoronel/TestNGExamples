@@ -1,6 +1,6 @@
 package com.howtotestngdo.test;
 
-import static org.testng.AssertJUnit.assertEquals;
+//import static org.testng.AssertJUnit.assertEquals;
 import org.testng.annotations.Test;
 import org.testng.asserts.SoftAssert;
 import org.testng.annotations.BeforeTest;
@@ -9,10 +9,8 @@ import org.testng.Assert;
 import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeClass;
 
-import java.lang.System;
-
 import org.openqa.selenium.*;
-import org.openqa.selenium.chrome.*;
+//import org.openqa.selenium.chrome.*;
 import org.openqa.selenium.support.PageFactory;
 
 
